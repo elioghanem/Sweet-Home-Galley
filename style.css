@@ -30,6 +30,106 @@ li {
     list-style-type: none;
 }
 
+.container {
+    padding: 90px 0;
+}
+
+.row {
+    width: 100%;
+    max-width: calc(1200px-20px);
+    margin: 0 auto;
+}
+
+
+/*burger Menu*/
+
+.btn__menu {
+    background-color: transparent;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.btn__menu:hover {
+    color: #e1b261;
+}
+
+.menu__list {
+    margin-top: 20px;
+}
+
+.menu__backdrop {
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    border: 1px solid lightgray;
+    margin: 5px;
+    border-radius: 4px;
+    animation: backdrop-animation 3s;
+}
+
+.menu--open .menu__backdrop {
+    display: flex;
+}
+
+.login__list {
+    margin-bottom: 20px;
+}
+
+.login__menu--link {
+    font-size: 16px;
+    color: #242424;
+    font-weight: 900;
+}
+
+.menu__link {
+    font-size: 20px;
+    color: #242424;
+    font-weight: 900;
+}
+
+.menu__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.menu__list {
+    padding: 10px 0;
+}
+
+.menu__login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menu__link {
+    color: white;
+    font-size: 40px;
+}
+
+.btn__menu--close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 8px;
+    opacity: 0.5;
+}
+
 
 /*nav*/
 
@@ -54,7 +154,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 20px;
+    margin-top: -110px;
+    width: 100%;
 }
 
 .nav__link--list {
@@ -66,7 +167,8 @@ nav {
 }
 
 .nav__logo {
-    width: 150px;
+    width: 100%;
+    max-width: 150px;
     height: 150px;
     background: none;
     margin-left: 100px;
@@ -168,20 +270,24 @@ ul li:hover ul.dropdown__content {
 .main__header {
     position: relative;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
+    margin-top: -150px;
 }
 
 .header__img {
-    position: relative;
-    width: 1000px;
-    left: 470px;
+    width: 100%;
+    max-width: 1000px;
     height: auto;
+    margin: 0 auto;
 }
 
 .header__desc {
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 20%;
     transform: translate(50%, -50%);
     display: flex;
     flex-direction: column;
@@ -202,12 +308,13 @@ ul li:hover ul.dropdown__content {
 
 .header__desc--title {
     margin: 0;
-    font-size: 46px;
+    color: #ffffff;
+    font-size: 35px;
 }
 
 .header__desc--para {
     margin: 10px 0;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .header__desc--list {
@@ -225,7 +332,7 @@ ul li:hover ul.dropdown__content {
 .nav-bullets {
     position: absolute;
     bottom: 80px;
-    left: 30%;
+    left: 20%;
     transform: translateX(-50%);
     display: flex;
     gap: 10px;
@@ -247,6 +354,12 @@ ul li:hover ul.dropdown__content {
     top: -3px;
     width: 17px;
     height: 17px;
+}
+
+.desc__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .disc__icon--container {
@@ -287,7 +400,6 @@ ul li:hover ul.dropdown__content {
 }
 
 .main--title__service {
-    padding: 40px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -295,9 +407,8 @@ ul li:hover ul.dropdown__content {
 }
 
 .service__title {
-    margin: 0 0 12px;
     color: #e1b261;
-    font-size: 200;
+    font-size: 40px;
 }
 
 .service__sub-title {
@@ -311,7 +422,7 @@ ul li:hover ul.dropdown__content {
     max-width: 910px;
 }
 
-.container {
+.container-service {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -431,4 +542,107 @@ ul li:hover ul.dropdown__content {
     color: #e1b261;
     background-color: transparent;
     transition: all 500ms ease;
+}
+
+
+/*responsive*/
+
+@media(max-width:1200px) {
+    .lamp__img {
+        display: none;
+    }
+    .nav__link--list {
+        display: none;
+    }
+    .contact-us__wrapper {
+        display: none;
+    }
+    .btn__menu {
+        margin-right: 20px;
+    }
+    nav {
+        margin-top: 0;
+    }
+    .container {
+        padding: 10px 0;
+    }
+    .main__header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+    }
+    .header__img {
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    .header__desc-1 {
+        position: relative;
+        top: 150px;
+        left: 40%;
+        transform: translate(50%, -50%);
+        /* Remove absolute positioning */
+        /*Center horizontally*/
+        text-align: center;
+        /*Center text*/
+        padding: 20px;
+        width: 80%;
+        max-width: 500px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s ease-in-out;
+        z-index: 10;
+    }
+    .header__desc-2 {
+        position: absolute;
+        top: 750px;
+        left: 50%;
+        transform: translate(50%, -50%);
+        /* Remove absolute positioning */
+        /*Center horizontally*/
+        text-align: center;
+        /*Center text*/
+        padding: 20px;
+        width: 80%;
+        max-width: 500px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s ease-in-out;
+        z-index: 10;
+    }
+    .header__desc-3 {
+        position: absolute;
+        top: 750px;
+        left: 50%;
+        transform: translate(50%, -50%);
+        /* Remove absolute positioning */
+        /*Center horizontally*/
+        text-align: center;
+        /*Center text*/
+        padding: 20px;
+        width: 80%;
+        max-width: 500px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s ease-in-out;
+        z-index: 20;
+    }
+    .nav-bullets {
+        top: 920px;
+        left: 44%;
+        transform: translate(50%, -50%);
+        display: flex;
+    }
+}
+
+@media(min-width:1200px) {
+    .btn__menu {
+        display: none;
+    }
+}
+
+@media(max-width:700px) {
+    .nav__logo {
+        margin-left: 20px;
+    }
 }

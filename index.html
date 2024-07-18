@@ -12,140 +12,197 @@
 
 <body>
     <section id="Home__page">
-        <figure>
-            <img src="./gallery assets/top-lightimage.png" alt="" class="lamp__img">
-        </figure>
-        <nav>
-            <figure>
-                <img src="./gallery assets/WhatsApp_Image_2024-07-17_at_15.22.41_092b1c9c-removebg-preview (1).png" alt="" class="nav__logo">
-            </figure>
-            <ul class="nav__link--list">
-                <li class="nav__link">
-                    <a href="#" class="
+        <div class="container">
+            <div class="row">
+                <figure>
+                    <img src="./gallery assets/top-lightimage.png" alt="" class="lamp__img">
+                </figure>
+                <nav>
+                    <figure>
+                        <img src="./gallery assets/WhatsApp_Image_2024-07-17_at_15.22.41_092b1c9c-removebg-preview (1).png" alt="" class="nav__logo">
+                    </figure>
+                    <ul class="nav__link--list">
+                        <li class="nav__link">
+                            <a href="#" class="
                     nav__link--anchor
                     link__hover-effect
                     link--hover-effect--black">Home</a>
-                </li>
-                <li class="nav__link">
-                    <a href="#" class="
+                        </li>
+                        <li class="nav__link">
+                            <a href="#" class="
                     nav__link--anchor
                     link__hover-effect
                     link--hover-effect--black">About</a>
-                </li>
-                <li class="nav__link">
-                    <a href="#" class="
+                        </li>
+                        <li class="nav__link">
+                            <a href="#" class="
                     nav__link--anchor
                     link__hover-effect
                     link--hover-effect--black">Services</a>
-                </li>
-                <li class="nav__link">
-                    <a href="#" class="
+                        </li>
+                        <li class="nav__link">
+                            <a href="#" class="
                     nav__link--anchor
                     link__hover-effect
                     link--hover-effect--black">Portfolio</a>
-                </li>
-                <li class="nav__link">
-                    <a href="#" class="nav__link--anchor">Pages &#x25BE;</a>
-                    <ul class="dropdown__content">
-                        <li class="dropdown__links"><a href="#" class="dropdown__link">Our Team</a></li>
-                        <li class="dropdown__links"><a href="#" class="dropdown__link">FAQs</a></li>
-                        <li class="dropdown__links"><a href="#" class="dropdown__link">Service Details</a></li>
+                        </li>
+                        <li class="nav__link">
+                            <a href="#" class="nav__link--anchor">Pages &#x25BE;</a>
+                            <ul class="dropdown__content">
+                                <li class="dropdown__links"><a href="#" class="dropdown__link">Our Team</a></li>
+                                <li class="dropdown__links"><a href="#" class="dropdown__link">FAQs</a></li>
+                                <li class="dropdown__links"><a href="#" class="dropdown__link">Service Details</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                </li>
-            </ul>
-            <div class="contact-us__wrapper">
-                <li class="nav__link">
-                    <a href="#" class="
+
+                    <div class="contact-us__wrapper">
+                        <li class="nav__link">
+                            <a href="#" class="
                 nav__link--anchor
                ">Contact Us</a>
-                </li>
-                <a href=""><span><i class="fa-solid fa-arrow-right"></i></span></a>
-            </div>
-        </nav>
-        <div class="main__header">
-            <figure>
-                <img src="./gallery assets/img-10.jpg" alt="" class="header__img">
-            </figure>
+                        </li>
+                        <a href=""><span><i class="fa-solid fa-arrow-right"></i></span></a>
+                    </div>
+                    <button class="btn__menu" onclick="openMenu()"><i class="fas fa-bars"></i></button>
+                    <div class="menu__backdrop">
+                        <button class="btn__menu btn__menu--close " onclick="closeMenu() ">
+                    <i class="fas fa-times"></i>
+                </button>
+                        <ul class="menu__links">
+                            <li class="menu__list">
+                                <a href="#features" class="menu__list--login
+                
+                        login__menu--link" onclick="closeMenu() ">FEATURES</a>
+                            </li>
+                            <li class="menu__list">
+                                <a href="#quality" class="menu__list--login
+                
+                        login__menu--link" onclick="closeMenu() ">QUALITY WORK</a>
+                            </li>
+                            <li class="menu__list">
+                                <a href="#steps" class="menu__list--login
+                
+                        login__menu--link" onclick="closeMenu() ">STEPS</a>
+                            </li>
 
-            <div class="header__desc header__desc-1">
-                <h1 class="header__desc--title">Unparalleled Luxury and Comfort</h1>
-                <p class="header__desc--para">Indulge in ultimate comfort and sophistication with our exquisite furniture. Each piece offers unmatched relaxation and style, turning your home into a luxurious haven.</p>
-                <div class="disc__icon--container">
-                    <span class="Discover__span">Discover More</span>
-                    <a href=""><i class="fa-solid fa-arrow-right discover__icon"></i></a>
+                            <li class="menu__list login__list">
+                                <a href="#value" class="menu__list--login
+                
+                login__menu--link" onclick="closeMenu() ">VALUES</a>
+                            </li>
+                            <li class="menu__list login__list">
+                                <a href="#pricing" class="menu__list--login
+                
+                login__menu--link" onclick="closeMenu() ">PRICING</a>
+                            </li>
+                            <li class="menu__list login__list">
+                                <a href="#testimonials" class="menu__list--login
+                
+                login__menu--link" onclick="closeMenu() ">TESTIMONIALS</a>
+                            </li>
+                            <li>
+                                <a href="#faqs" class="login__link--botton
+                        menu__link--botton" onclick="closeMenu() ">FAQS</a>
+                            </li>
+
+                        </ul>
+                </nav>
                 </div>
             </div>
-            <div class="header__desc header__desc-2">
-                <h1 class="header__desc--title">Classic Elegance Redefined</h1>
-                <p class="header__desc--para">Experience timeless elegance and superior craftsmanship. Our collection showcases enduring style and impeccable quality, elevating your home with refined beauty.</p>
-                <div class="disc__icon--container">
-                    <span class="Discover__span">Discover More</span>
-                    <a href=""><i class="fa-solid fa-arrow-right discover__icon"></i></a>
+            <div class="container">
+
+                <div class="main__header">
+                    <figure>
+                        <img src="./gallery assets/img-10.jpg" alt="" class="header__img">
+                    </figure>
+                    <div class="desc__wrapper">
+                        <div class="header__desc header__desc-1">
+                            <h1 class="header__desc--title">Unparalleled Luxury and Comfort</h1>
+                            <p class="header__desc--para">Indulge in ultimate comfort and sophistication with our exquisite furniture. Each piece offers unmatched relaxation and style, turning your home into a luxurious haven.</p>
+                            <div class="disc__icon--container">
+                                <span class="Discover__span">Discover More</span>
+                                <a href=""><i class="fa-solid fa-arrow-right discover__icon"></i></a>
+                            </div>
+                        </div>
+                        <div class="header__desc header__desc-2">
+                            <h1 class="header__desc--title">Classic Elegance Redefined</h1>
+                            <p class="header__desc--para">Experience timeless elegance and superior craftsmanship. Our collection showcases enduring style and impeccable quality, elevating your home with refined beauty.</p>
+                            <div class="disc__icon--container">
+                                <span class="Discover__span">Discover More</span>
+                                <a href=""><i class="fa-solid fa-arrow-right discover__icon"></i></a>
+                            </div>
+                        </div>
+                        <div class="header__desc header__desc-3">
+                            <h1 class="header__desc--title">Cutting-Edge Design for Contemporary Living</h1>
+                            <p class="header__desc--para">Discover modern, functional furniture designed for a chic home. Our collection blends sleek design with practicality, offering contemporary elegance and comfort.</p>
+                            <div class="disc__icon--container">
+                                <a href="" class="Discover__span">Discover More</a>
+                                <a href=""><i class="fa-solid fa-arrow-right discover__icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-bullets">
+                        <span class="bullet" data-target="1"></span>
+                        <span class="bullet" data-target="2"></span>
+                        <span class="bullet" data-target="3"></span>
+                    </div>
                 </div>
+
             </div>
-            <div class="header__desc header__desc-3">
-                <h1 class="header__desc--title">Cutting-Edge Design for Contemporary Living</h1>
-                <p class="header__desc--para">Discover modern, functional furniture designed for a chic home. Our collection blends sleek design with practicality, offering contemporary elegance and comfort.</p>
-                <div class="disc__icon--container">
-                    <a href="" class="Discover__span">Discover More</a>
-                    <a href=""><i class="fa-solid fa-arrow-right discover__icon"></i></a>
-                </div>
-            </div>
-            <div class="nav-bullets">
-                <span class="bullet" data-target="1"></span>
-                <span class="bullet" data-target="2"></span>
-                <span class="bullet" data-target="3"></span>
-            </div>
-        </div>
     </section>
     <section id="what__we--do">
-        <div class="main--title__service">
-            <h3 class="service__title">What We Do</h3>
-            <h2 class="service__sub-title">Our Highlighted Services for Interior Designs</h2>
-        </div>
         <div class="container">
-            <div class="service__container">
-                <div class="service__section-1">
-                    <img src="./gallery assets/service-image1.jpg" alt="" class="img__service">
-                    <img src="./gallery assets/service-icon1.png" alt="" class="img__icon">
-                    <div class="service__title-para--wrapper">
-                        <h4 class="title__service">Architecture</h4>
-                        <p class="para__service">At Sweet Home, we turn your ideas into beautiful, functional spaces.</p>
-                    </div>
-                    <a href="" class="read__more--icon">Read More &#x25B6;</a>
+            <div class="row">
+                <div class="main--title__service">
+                    <h3 class="service__title">What We Do</h3>
+                    <h2 class="service__sub-title">Our Highlighted Services for Interior Designs</h2>
                 </div>
-                <div class="service__section-2">
-                    <img src="./gallery assets/service-image2.jpg" alt="" class="img__service">
-                    <img src="./gallery assets/service-icon2.png" alt="" class="img__icon">
-                    <div class="service__title-para--wrapper">
-                        <h4 class="title__service">Interior Work</h4>
-                        <p class="para__service">At Sweet Home, we turn your ideas into stunning, functional spaces.</p>
+                <div class="container-service">
+                    <div class="service__container">
+                        <div class="service__section-1">
+                            <img src="./gallery assets/service-image1.jpg" alt="" class="img__service">
+                            <img src="./gallery assets/service-icon1.png" alt="" class="img__icon">
+                            <div class="service__title-para--wrapper">
+                                <h4 class="title__service">Architecture</h4>
+                                <p class="para__service">At Sweet Home, we turn your ideas into beautiful, functional spaces.</p>
+                            </div>
+                            <a href="" class="read__more--icon">Read More &#x25B6;</a>
+                        </div>
+                        <div class="service__section-2">
+                            <img src="./gallery assets/service-image2.jpg" alt="" class="img__service">
+                            <img src="./gallery assets/service-icon2.png" alt="" class="img__icon">
+                            <div class="service__title-para--wrapper">
+                                <h4 class="title__service">Interior Work</h4>
+                                <p class="para__service">At Sweet Home, we turn your ideas into stunning, functional spaces.</p>
+                            </div>
+                            <a href="" class="read__more--icon">Read More &#x25B6;</a>
+                        </div>
+                        <div class="service__section-1">
+                            <img src="./gallery assets/service-image3.jpg" alt="" class="img__service">
+                            <img src="./gallery assets/service-icon3.png" alt="" class="img__icon">
+                            <div class="service__title-para--wrapper">
+                                <h4 class="title__service">Renovation</h4>
+                                <p class="para__service">At Sweet Home, we turn your renovation ideas into stunning, functional spaces.</p>
+                            </div>
+                            <a href="" class="read__more--icon">Read More &#x25B6;</a>
+                        </div>
+                        <div class="service__section-2">
+                            <img src="./gallery assets/service-image4.jpg" alt="" class="img__service">
+                            <img src="./gallery assets/service-icon4.png" alt="" class="img__icon">
+                            <div class="service__title-para--wrapper">
+                                <h4 class="title__service">Decor & Art</h4>
+                                <p class="para__service">At Sweet Home, we bring your decor and art ideas to life with style and elegance.</p>
+                            </div>
+                            <a href="" class="read__more--icon">Read More &#x25B6;</a>
+                        </div>
                     </div>
-                    <a href="" class="read__more--icon">Read More &#x25B6;</a>
-                </div>
-                <div class="service__section-1">
-                    <img src="./gallery assets/service-image3.jpg" alt="" class="img__service">
-                    <img src="./gallery assets/service-icon3.png" alt="" class="img__icon">
-                    <div class="service__title-para--wrapper">
-                        <h4 class="title__service">Renovation</h4>
-                        <p class="para__service">At Sweet Home, we turn your renovation ideas into stunning, functional spaces.</p>
-                    </div>
-                    <a href="" class="read__more--icon">Read More &#x25B6;</a>
-                </div>
-                <div class="service__section-2">
-                    <img src="./gallery assets/service-image4.jpg" alt="" class="img__service">
-                    <img src="./gallery assets/service-icon4.png" alt="" class="img__icon">
-                    <div class="service__title-para--wrapper">
-                        <h4 class="title__service">Decor & Art</h4>
-                        <p class="para__service">At Sweet Home, we bring your decor and art ideas to life with style and elegance.</p>
-                    </div>
-                    <a href="" class="read__more--icon">Read More &#x25B6;</a>
-                </div>
-            </div>
-            <div class="explore__service-icon--wrapper">
-                <a href="" class="explore__service">Explore All Services 
+                    <div class="explore__service-icon--wrapper">
+                        <a href="" class="explore__service">Explore All Services 
                     <i class="fa-solid fa-arrow-right discover__icon"></i>
                 </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

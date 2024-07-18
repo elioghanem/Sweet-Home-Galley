@@ -33,3 +33,11 @@ document.addEventListener('DOMContentLoaded', () => {
         updateActiveDescription(currentIndex);
     }, 5000);
 });
+
+function openMenu() {
+    document.body.classList += " menu--open"
+}
+
+function closeMenu() {
+    document.body.classList.remove('menu--open')
+}
