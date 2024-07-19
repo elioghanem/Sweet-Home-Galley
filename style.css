@@ -1,4 +1,5 @@
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;400;700;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
     * {
         margin: 0;
         padding: 0;
@@ -9,6 +10,7 @@
      :root {
         --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
         --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        --e-global-typography-d380142-font-family: 'Your Custom Font', sans-serif;
     }
     
     body {
@@ -20,6 +22,17 @@
         color: #212529;
         text-align: left;
         background-color: #fff;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    a,
+    li,
+    span {
+        font-family: 'Montserrat', sans-serif;
     }
     
     html {
@@ -116,7 +129,7 @@
         position: relative;
     }
     
-    .lamp__img {
+    .lamp__img-1 {
         position: absolute;
         top: 0;
         left: 0;
@@ -267,12 +280,12 @@
         width: 100%;
         max-width: 1000px;
         padding: 0 40px;
+        transition: opacity 500ms ease;
     }
     
     .desc__list.active {
         display: flex;
         opacity: 1;
-        transition: opacity 500ms ease;
     }
     
     .header__img {
@@ -480,10 +493,167 @@
         background-color: transparent;
         transition: all 500ms ease;
     }
+    /*about us*/
+    
+    #about_us {
+        background-image: url('gallery\ assets/banner-background.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    
+    .lamp__img-2 {
+        position: absolute;
+        top: 0;
+        left: 1150px;
+        width: 150px;
+        height: 250px;
+        z-index: 0;
+    }
+    
+    .img__about-us--wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 1800px;
+        margin: 0 auto;
+        margin-top: 70px;
+    }
+    
+    .about-us__title {
+        font-size: 18px;
+        color: #e1b261;
+        font-weight: 300;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .about-us_sub--title {
+        font-size: 38px;
+        color: #ffffff;
+        font-weight: 300;
+        margin: 15px 0;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .about-us__img-1 {
+        width: 100%;
+        max-width: 400px;
+        position: relative;
+        top: 0;
+        transition: all 300ms ease;
+    }
+    
+    .about-us__img-1:hover {
+        top: -28px;
+    }
+    
+    .about-us__img-2 {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 100px;
+        position: relative;
+        top: 0;
+        transition: all 300ms ease;
+        z-index: 0;
+    }
+    
+    .about-us__img-2:hover {
+        top: -28px;
+    }
+    
+    .about-us--title__desc--wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 30px;
+        margin-top: -70px;
+    }
+    
+    .about-us__para {
+        color: #A7A7A7;
+        font-size: 18px;
+        margin: 20px 0;
+    }
+    /*process*/
+    
+    #process {
+        background-image: url('gallery\ assets/service-background.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    
+    .title__sub-title-process--wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    
+    .process__title {
+        color: #e1b261;
+        font-weight: 300;
+        padding: 20px;
+        margin-top: 20px;
+    }
+    
+    .process__para {
+        color: #A7A7A7;
+        font-size: 15px;
+        padding: 20px;
+    }
+    
+    .process__number {
+        color: #e1b261;
+        font-size: 42px;
+        padding: 15px;
+    }
+    
+    .process__sub--title {
+        color: #ffffff;
+        font-size: 38px;
+        font-weight: 300;
+    }
+    
+    .process__container--all {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+    
+    .process__container {
+        width: 25%;
+        max-width: 500px;
+        border: 1px solid #212529;
+        background-color: #222224;
+    }
+    
+    .border__process {
+        border: 2px solid #e1b261;
+    }
+    
+    .number__img-process__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .process__img {
+        margin: 20px;
+    }
     /*responsive*/
     
     @media(max-width:1200px) {
-        .lamp__img {
+        .lamp__img-1,
+        .lamp__img-2 {
             display: none;
         }
         .nav__link--list {
@@ -504,6 +674,9 @@
         .desc__title {
             font-size: 35px;
         }
+        .about-us__img-2 {
+            display: none;
+        }
     }
     
     @media(min-width:1200px) {
@@ -512,7 +685,13 @@
         }
     }
     
-    @media(max-width:950px) {
+    @media(max-width:1000px) {
+        .process__container {
+            width: 50%;
+        }
+    }
+    
+    @media(max-width: 950px) {
         .desc__title {
             font-size: 30px;
         }
@@ -529,6 +708,32 @@
         .desc__wrapper {
             text-align: center;
         }
+        .img__about-us--wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+        .about-us--title__desc--wrapper {
+            width: 100%;
+            max-width: 600px;
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .about-us_sub--title {
+            font-size: 25px;
+        }
+        .about-us__para {
+            font-size: 14px;
+        }
+        .service__sub-title {
+            width: 100%;
+            max-width: 300px;
+            font-size: 14px;
+        }
+        .process__sub--title {
+            font-size: 25px;
+        }
     }
     
     @media(max-width: 700px) {
@@ -540,14 +745,17 @@
         }
         .service__sub-title {
             font-size: 18px;
+            margin-top: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-top: 10px;
+        }
+        .about-us__img-1 {
+            margin: 0 200px
         }
         .service__section-1,
         .service__section-2 {
-            width: 50%;
+            width: 100%;
             margin-top: 60px;
         }
     }
