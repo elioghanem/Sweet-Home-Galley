@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./style.css">
     <script src="index.js" defer></script>
     <script src="https://kit.fontawesome.com/3354dbdbc4.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body>
@@ -73,83 +75,79 @@
                             <li class="menu__list">
                                 <a href="#features" class="menu__list--login
                 
-                        login__menu--link" onclick="closeMenu() ">FEATURES</a>
+                        login__menu--link" onclick="closeMenu() ">Home</a>
                             </li>
                             <li class="menu__list">
                                 <a href="#quality" class="menu__list--login
                 
-                        login__menu--link" onclick="closeMenu() ">QUALITY WORK</a>
+                        login__menu--link" onclick="closeMenu() ">About</a>
                             </li>
                             <li class="menu__list">
                                 <a href="#steps" class="menu__list--login
                 
-                        login__menu--link" onclick="closeMenu() ">STEPS</a>
+                        login__menu--link" onclick="closeMenu() ">Services</a>
                             </li>
 
                             <li class="menu__list login__list">
                                 <a href="#value" class="menu__list--login
                 
-                login__menu--link" onclick="closeMenu() ">VALUES</a>
+                login__menu--link" onclick="closeMenu() ">Portfolio</a>
                             </li>
                             <li class="menu__list login__list">
                                 <a href="#pricing" class="menu__list--login
                 
-                login__menu--link" onclick="closeMenu() ">PRICING</a>
+                login__menu--link" onclick="closeMenu() ">Pages</a>
                             </li>
                             <li class="menu__list login__list">
                                 <a href="#testimonials" class="menu__list--login
                 
-                login__menu--link" onclick="closeMenu() ">TESTIMONIALS</a>
-                            </li>
-                            <li>
-                                <a href="#faqs" class="login__link--botton
-                        menu__link--botton" onclick="closeMenu() ">FAQS</a>
+                login__menu--link" onclick="closeMenu() ">Contact Us</a>
                             </li>
 
                         </ul>
                 </nav>
                 </div>
             </div>
-            <div class="container">
 
-                <div class="main__header">
-                    <figure>
-                        <img src="./gallery assets/img-10.jpg" alt="" class="header__img">
-                    </figure>
-                    <div class="desc__wrapper">
-                        <div class="header__desc header__desc-1">
-                            <h1 class="header__desc--title">Unparalleled Luxury and Comfort</h1>
-                            <p class="header__desc--para">Indulge in ultimate comfort and sophistication with our exquisite furniture. Each piece offers unmatched relaxation and style, turning your home into a luxurious haven.</p>
-                            <div class="disc__icon--container">
-                                <span class="Discover__span">Discover More</span>
-                                <a href=""><i class="fa-solid fa-arrow-right discover__icon"></i></a>
-                            </div>
-                        </div>
-                        <div class="header__desc header__desc-2">
-                            <h1 class="header__desc--title">Classic Elegance Redefined</h1>
-                            <p class="header__desc--para">Experience timeless elegance and superior craftsmanship. Our collection showcases enduring style and impeccable quality, elevating your home with refined beauty.</p>
-                            <div class="disc__icon--container">
-                                <span class="Discover__span">Discover More</span>
-                                <a href=""><i class="fa-solid fa-arrow-right discover__icon"></i></a>
-                            </div>
-                        </div>
-                        <div class="header__desc header__desc-3">
-                            <h1 class="header__desc--title">Cutting-Edge Design for Contemporary Living</h1>
-                            <p class="header__desc--para">Discover modern, functional furniture designed for a chic home. Our collection blends sleek design with practicality, offering contemporary elegance and comfort.</p>
-                            <div class="disc__icon--container">
-                                <a href="" class="Discover__span">Discover More</a>
-                                <a href=""><i class="fa-solid fa-arrow-right discover__icon"></i></a>
-                            </div>
-                        </div>
+            <div class="desc__img--wrapper">
+                <div class="desc__wrapper">
+                    <div class="desc__list desc__wrapper-1 active">
+                        <h2 class="desc__title">Unparalleled Luxury and Comfort</h2>
+                        <div class="desc__para">Indulge in ultimate comfort and sophistication with our exquisite furniture. Each piece offers unmatched relaxation and style, turning your home into a luxurious haven.</div>
+                        <a href="#" class="discover__more--wrapper">
+                            <span class="discover__more--span">Discover More</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
                     </div>
-                    <div class="nav-bullets">
-                        <span class="bullet" data-target="1"></span>
-                        <span class="bullet" data-target="2"></span>
-                        <span class="bullet" data-target="3"></span>
+                    <div class="desc__list desc__wrapper-2">
+                        <h2 class="desc__title">Classic Elegance Redefined</h2>
+                        <div class="desc__para">Experience timeless elegance and superior craftsmanship. Our collection showcases enduring style and impeccable quality, elevating your home with refined beauty.</div>
+                        <a href="#" class="discover__more--wrapper">
+                            <span class="discover__more--span">Discover More</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="desc__list desc__wrapper-3">
+                        <h2 class="desc__title">Timeless Elegance Reimagined</h2>
+                        <div class="desc__para">Experience timeless elegance and superior craftsmanship. Our collection showcases enduring style, elevating your home with refined beauty."</div>
+                        <a href="#" class="discover__more--wrapper">
+                            <span class="discover__more--span">Discover More</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
 
+                <div class="nav-bullets">
+                    <span class="bullet active" data-target="1"></span>
+                    <span class="bullet" data-target="2"></span>
+                    <span class="bullet" data-target="3"></span>
+                </div>
+
+                <figure>
+                    <img src="./gallery assets/img-10.jpg" alt="" class="header__img">
+                </figure>
             </div>
+
     </section>
     <section id="what__we--do">
         <div class="container">
