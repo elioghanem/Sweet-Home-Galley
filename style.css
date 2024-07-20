@@ -663,9 +663,6 @@
             background-size: cover;
             position: absolute;
             width: 100%;
-            z-index: 1;
-            /* Lower z-index if needed */
-            padding-bottom: 50px;
         }
         
         .year__para--wrapper {
@@ -864,5 +861,8 @@
             .service__section-2 {
                 width: 100%;
                 margin-top: 60px;
+            }
+            .service__container {
+                margin-right: 40px;
             }
         }
