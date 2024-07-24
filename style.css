@@ -760,6 +760,17 @@
             /* Ensure the positioning context for absolute elements */
         }
         
+        .swiper {
+    width: 100%;
+    height: 100%;
+}
+        
+        .item {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        
         .recent__figure {
             position: relative;
             /* Position the figure relative to position the text absolutely within it */
@@ -768,7 +779,7 @@
         
         .recent__img {
             width: 100%;
-            max-width: 1000px;
+            max-width: 100%;
         }
         
         .title__para--wrapper {
@@ -777,6 +788,7 @@
             justify-content: center;
             flex-direction: column;
             text-align: center;
+            margin-left: 15px;
         }
         
         .item__container {
@@ -788,12 +800,13 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 50px 173px 50px;
+            margin: 0 auto;
             position: absolute;
             /* Ensure the container is positioned absolutely */
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            display: none;
             /* Center the container within the figure */
         }
         
@@ -808,7 +821,13 @@
             margin: 0 70px 55px;
         }
         
-        .slider__wrapper .slider-pagination-bullet {
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .slider__wrapper .swiper-pagination-bullet {
             background: #fff;
             height: 15px;
             width: 15px;

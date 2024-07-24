@@ -55,7 +55,11 @@ const swiper = new Swiper('.slider__wrapper', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-
+    autoplay: {
+        delay: 5000, // 5 seconds
+        disableOnInteraction: false, // Continue autoplay after interactions
+    },
+    slidesPerView: 1,
     breakpoints: {
         0: {
             slidesPerView: 1
@@ -63,10 +67,9 @@ const swiper = new Swiper('.slider__wrapper', {
         768: {
             slidesPerView: 2
         },
-        2000: {
+        1500: {
             slidesPerView: 3
         }
     }
-
 
 });
