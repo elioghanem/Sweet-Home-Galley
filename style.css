@@ -723,6 +723,113 @@
             opacity: 0.7;
         }
         /*whats new*/
+        
+        #whats__new {
+            background-image: url('gallery\ assets/service-background.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        
+        .title__whats--sub-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        .whats__title {
+            font-size: 18px;
+            color: #e1b261;
+            margin: 0 0 10px;
+        }
+        
+        .whats__sub--title {
+            font-size: 32px;
+            color: #ffffff;
+            margin: o o 35px;
+        }
+        
+        .items {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+            position: relative;
+            /* Ensure the positioning context for absolute elements */
+        }
+        
+        .recent__figure {
+            position: relative;
+            /* Position the figure relative to position the text absolutely within it */
+            width: 100%;
+        }
+        
+        .recent__img {
+            width: 100%;
+            max-width: 1000px;
+        }
+        
+        .title__para--wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        .item__container {
+            border-radius: 125px;
+            background-color: #e1b261;
+            padding: 8px;
+            width: 230px;
+            height: 230px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 50px 173px 50px;
+            position: absolute;
+            /* Ensure the container is positioned absolutely */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* Center the container within the figure */
+        }
+        
+        .item__icon {
+            margin-top: 10px;
+            /* Adjust as needed */
+        }
+        
+        .slider__wrapper {
+            overflow: hidden;
+            max-width: 1200px;
+            margin: 0 70px 55px;
+        }
+        
+        .slider__wrapper .slider-pagination-bullet {
+            background: #fff;
+            height: 15px;
+            width: 15px;
+        }
+        
+        .slider__wrapper .swiper-slide-button {
+            color: #fff;
+            margin-top: -50px;
+        }
+        
+        .item__title {
+            font-size: 14px;
+            margin: 0 0 4px;
+            color: #ffffff;
+        }
+        
+        .item__para {
+            font-size: 20px;
+            margin: 0 0 8px;
+            color: #ffffff;
+        }
         /*responsive*/
         
         @media(max-width: 1200px) {
@@ -837,6 +944,12 @@
             .year__para--wrapper {
                 display: flex;
                 flex-direction: column;
+            }
+            .slider__wrapper {
+                margin: 0 10px 40px;
+            }
+            .slider__wrapper .swiper-slide-button {
+                display: none;
             }
         }
         
